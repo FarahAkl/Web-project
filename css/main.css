@@ -1,0 +1,391 @@
+/* Farah Akl*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Paytone One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --bg-color:#fff;
+    --text-color:#221314;
+    --second-color:#5a7184;
+    --main-color:#6e54fa;
+    --big-font:6rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+.main-page {
+    background-image: url(../imgs/island-boat-blue-sky-water-ocean-beach-4k-wallpaper-3840x2160.jpg);
+    color: var(--bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    width: 100%;
+}
+.heading {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.heading i {
+    font-size: 20px;
+    padding: 0;
+    position: absolute;
+    left: 55px;
+}
+
+.heading ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading ul li {
+    padding-left: 20px;
+}
+.heading ul li a {
+    color: var(--bg-color);
+}
+.heading ul li a:hover {
+    border-bottom: solid var(--main-color) 2px;
+}
+.home-content h2 {
+    font-family:'Paytone One', sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    line-height: 1.2;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+.home-content p{
+    font-size:var(--p-font);
+    font-weight: 400;
+    color:var(--bg-color);
+    margin-bottom:30px ;
+    letter-spacing: 2.5px;
+    line-height: 1.7;
+}
+.home-content input[type="button"] {
+    padding: 20px 30px;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    opacity: .9;
+    margin-bottom: 90px;
+    margin-top: 105px;
+    border: none;
+    border-radius: 30px;
+}
+/*Fatma Atia*/
+.text{
+    font-size: 25px;
+}
+.container .text h2 {
+    margin-top:60px ;
+    margin-left: 0;
+    font-size: var(--h2-font);
+}
+.container-1{
+    font-size: 50px;
+}
+.row-items{
+    display: grid;
+    grid-template-columns:repeat(4,250px);
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.container-box{
+    background: var(--bg-color);
+    border: 1px solid #f0eded;
+    padding: 50px 10px;
+    border-radius: 4px;
+    transition: all 1s  ease;
+    cursor: pointer;
+}
+
+.container-1 .one {
+    padding: 15px;
+    background-color:#f9f5f5;
+    box-shadow:5px 10px 30px rgb(85, 85, 85/20%) ;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.container-box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.container-box:hover {
+    box-shadow: 5px 30px 56.1276px rgb(55,55,55/12%);
+    border: 1px solid transparent;
+    transform: translateY(-10px);
+}
+.container-box i {
+    color: var(--main-color);
+}
+/*Kadria Munir*/
+.destination-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.destination h2{
+    font-size: var(--h2-font);
+    margin-top: 60px;
+}
+.col-content{
+    position: relative;
+}
+.col-content img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(80%);
+    transition: all .3s cubic-bezier(495, 05, 55, 95);
+    will-change: filter;
+}
+.col-content h5 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--bg-color);
+    left: 15px;
+    bottom: 60px;
+}
+.col-content p {
+    position: absolute;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--bg-color);
+    left: 15px;
+    bottom: 30px;
+    letter-spacing: 2px;
+}
+.col-content img:hover{
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+.newsletter{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 3rem;
+    margin-top: 60px;
+}
+.news-text h2{
+    font-size: var(--h2-font);
+    margin-bottom: 5px;
+}
+.news-text p{
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height:30px;
+}
+.newsletter form {
+    max-width: 100%;
+    width: 450px;
+    position:relative;
+    margin-top: 20px;
+}
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px ;
+    box-shadow: 5px 10px 30px rgb(85,85,85,20%);
+    outline: none;
+    border: solid 1px var(--main-color);
+    border-radius:50px;
+}
+.newsletter form input:last-child{
+    display: inline-block;
+    position: absolute;
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+/*Farida Mekawey*/
+#contact{
+    background: var(--main-color);
+    margin-top: 60px;
+    padding-top: 20px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    padding: 20px 0;
+}
+.list{
+    width: 25%;
+}
+.list h4{
+    font-size: 21px;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+    position: relative;
+}
+.list h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom:-10px ;
+    background: var(--bg-color);
+}
+.list ul li:not(:last-child){
+    margin-bottom: 16px;
+}
+.list ul li a{
+    color:#ffffffbf;
+    font-size: var(--p-font);
+    display: block;
+    transition: .3s;
+}
+.list ul li a:hover{
+    color: var(--bg-color);
+    transform: translateX(14px);
+}
+.list.social a {
+    height: 40px;
+    width: 40px;
+    background: var(--bg-color);
+    color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+    margin-right: 10px;
+}
+.list .social a:hover {
+    transform: scale(1.1);
+}
+.end-text {
+    text-align: center;
+    padding-top: 90px;
+}
+.end-text p{
+    color: var(--bg-color);
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.list .social i {
+    color: var(--bg-color);
+    padding: 10px;
+    font-size: 25px;
+}
+
+/*
+@media (max-width:1400px) {
+    header{
+        padding: 17px 3%;
+        transition: .2s;
+    }
+    header.sticky{
+        padding: 10px 3%;
+        transition: .2s;
+    }
+section{
+    padding: 80px 3%;
+    transition: .2s;
+}
+:root{
+    --big-font: 4.5rem;
+    --h2-font:2.3rem;
+    --p-font:1rem;
+    transition: .2s;
+}
+}
+
+@media  (max-width: 1040px){
+    #menu-icon{
+        display: block;
+    }
+    .stick #menu-icon{
+        color: var(--text-color);
+    }
+    .home{
+        height: 88vh;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        right:-100%;
+        width: 270px;
+        height: 120vh;
+        background: #1067cc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 30px;
+        transition: 0.5s all;
+    }
+    .navbar a {
+        display: block;
+        margin: 1.2rem 0;
+    }
+    .stick.navbar a{
+        color: var(--bg-color);
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+    }
+    .open{
+        right: 0;
+    }
+    .list{
+        width: 50%;
+        margin-bottom: 12px;
+    }
+}
+@media ( max-width:575px){
+    .list{
+    width: 100%;
+    }
+    .newsletter form {
+        width: 350px;
+    }
+    :root{
+        --big-font: 3.8rem;
+        --h2-font:1.8rem;
+        transition: .2s;
+    }
+    .text{
+        text-align: center;
+    }
+    .home{
+        height: 85vh;
+        transition: .2s;
+    }
+}*/
